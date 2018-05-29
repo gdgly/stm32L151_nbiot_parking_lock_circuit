@@ -1,12 +1,12 @@
 (PCB STM32L151_NBIOT_MAGNETIC_171009
  (description
-  (timeStamp "2018 04 20 04 24 06")
+  (timeStamp "2018 05 29 07 33 25")
   (program "CAPTURE.EXE" (Version "16.6.0.d001"))
   (source "Original data from OrCAD/CAPTURE schematic")
   (title "01_COVER")
-  (date "Friday, April 20, 2018")
-  (document "G:\\MOVEBROAD\\STM32L151_PARKING_LOCK\\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\\STM32L151_NBIOT_MAGNETIC_171009.DSN")
-  (revision "1.4")
+  (date "Tuesday, May 29, 2018")
+  (document "G:\\MOVEBROAD\\STM32L151_PARKING_LOCK\\WORKSPACE\\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\\STM32L151_NBIOT_MAGNETIC_171009.DSN")
+  (revision "1.5")
   (organization "")
   (address1 "")
   (address2 "")
@@ -77,7 +77,7 @@
   (component CON2
    (place J1
     (property 
-     ("PCB Footprint" HEADER2_POL)
+     ("PCB Footprint" HEADER2_POL_3_96MM)
      (timestamp 00AE6187)
      ("Source Package" CON2)
      (Value CON2)))
@@ -93,7 +93,7 @@
      ("PCB Footprint" "SOT23-6L")
      (timestamp 00AE60A6)
      ("Source Package" MP2451)
-     (Value MP2451))))
+     (Value MP2359))))
   (component LM358
    (place U11
     (property 
@@ -142,6 +142,12 @@
      (timestamp 00AE6490)
      ("Source Package" Cap1206_pole)
      (Value 100uF/6.3V)))
+   (place C56
+    (property 
+     ("PCB Footprint" CAP8MM)
+     (timestamp 00AEDFC8)
+     ("Source Package" Cap1206_pole)
+     (Value 220uF)))
    (place C26
     (property 
      ("PCB Footprint" 1210C)
@@ -179,7 +185,7 @@
      ("PCB Footprint" SOD123)
      (timestamp 00AE5FDA)
      ("Source Package" "DIODE SCHOTTKY")
-     (Value MMSZ4681))))
+     (Value B230A))))
   (component CAP0603
    (place C50
     (property 
@@ -336,7 +342,7 @@
      ("PCB Footprint" 0603C)
      (timestamp 00AE5FC6)
      ("Source Package" CAP0603)
-     (Value 100nF)))
+     (Value 22nF)))
    (place C14
     (property 
      ("PCB Footprint" 0603C)
@@ -367,6 +373,13 @@
      (timestamp 00AC4511)
      ("Source Package" CAP0603)
      (Value 0.22uF))))
+  (component "Header 8"
+   (place J13
+    (property 
+     ("PCB Footprint" HEADER8_2MM)
+     (timestamp 00AEF3C1)
+     ("Source Package" "Header 8")
+     (Value "Header 8"))))
   (component "XL-4438-SMT"
    (place U15
     (property 
@@ -440,7 +453,7 @@
      ("PCB Footprint" 0603R)
      (timestamp 00AE5F72)
      ("Source Package" R_0603)
-     (Value 50K)))
+     (Value 47K)))
    (place R5
     (property 
      ("PCB Footprint" 0603R)
@@ -450,7 +463,7 @@
    (place R35
     (property 
      ("PCB Footprint" 0603R)
-     (timestamp 00AE5F82)
+     (timestamp 00AED76E)
      ("Source Package" R_0603)
      (Value 200K)))
    (place R6
@@ -464,25 +477,43 @@
      ("PCB Footprint" 0603R)
      (timestamp 00AE602E)
      ("Source Package" R_0603)
-     (Value 40.2K)))
+     (Value 16.2K)))
    (place R37
     (property 
      ("PCB Footprint" 0603R)
      (timestamp 00AE6046)
      ("Source Package" R_0603)
-     (Value 124K)))
+     (Value 49.9K)))
    (place R8
     (property 
      ("PCB Footprint" 0603R)
      (timestamp 00AC8D4D)
      ("Source Package" R_0603)
      (Value "(NC)1M")))
+   (place R38
+    (property 
+     ("PCB Footprint" 0603R)
+     (timestamp 00AEEE9B)
+     ("Source Package" R_0603)
+     (Value 0R/NC)))
    (place R9
     (property 
      ("PCB Footprint" 0603R)
      (timestamp 00AC8D67)
      ("Source Package" R_0603)
      (Value 680K)))
+   (place R39
+    (property 
+     ("PCB Footprint" 0603R)
+     (timestamp 00AEEEB5)
+     ("Source Package" R_0603)
+     (Value 0R/NC)))
+   (place R40
+    (property 
+     ("PCB Footprint" 0603R)
+     (timestamp 00AEEECF)
+     ("Source Package" R_0603)
+     (Value 0R/NC)))
    (place R10
     (property 
      ("PCB Footprint" 0603R)
@@ -567,7 +598,7 @@
      ("PCB Footprint" CD43)
      (timestamp 00AE5FEA)
      ("Source Package" BEAD)
-     (Value 2.2uH)))
+     (Value 4.7uH/1.66A)))
    (place BL1
     (property 
      ("PCB Footprint" 1008L)
@@ -607,6 +638,13 @@
      (timestamp 00ACCDEF)
      ("Source Package" Cap_pole)
      (Value 22uf))))
+  (component JDY_08
+   (place U23
+    (property 
+     ("PCB Footprint" JDY_08)
+     (timestamp 00AEEA31)
+     ("Source Package" JDY_08)
+     (Value JDY_08))))
   (component "NBxx-01_0"
    (place U8
     (property 
@@ -749,14 +787,7 @@
      ("PCB Footprint" LQFP48)
      (timestamp 00AC2443)
      ("Source Package" STM32L15xCx_2)
-     (Value " STM32L15xCx"))))
-  (component RADAR_MODULE2
-   (place U18
-    (property 
-     ("PCB Footprint" RADAR_MODULE2)
-     (timestamp 00ADE1A1)
-     ("Source Package" RADAR_MODULE2)
-     (Value RADAR_MODULE2)))))
+     (Value " STM32L15xCx")))))
  (library
   (image "MOSFET-N"
    (property 
@@ -1090,64 +1121,6 @@
      (Type Passive)
      (Order 8)
      ("Is No Connect" True))))
-  (image RADAR_MODULE2
-   (property 
-    (sourcelib G:\\MOVEBROAD\\STM32L151_NBIOT\\WORKSPACE\\STM32L151_NBIOT_CIRCUIT\\LIBRARIES\\SPECIALIC.OLB))
-   (pin 999 1
-    (property 
-     (pinname VCC)
-     (pintype 7)
-     (Name VCC)
-     (Number 1)
-     ("Swap Id" "-1")
-     (Type Power)
-     ("Net Name" VCC_RADER)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname EN)
-     (pintype 4)
-     (Name EN)
-     (Number 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" PB5_RADER_EN)
-     (Order 1)
-     ("Is No Connect" False)))
-   (pin 999 3
-    (property 
-     (pinname RXD)
-     (pintype 4)
-     (Name RXD)
-     (Number 3)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" PA2_UART2_TX_RD)
-     (Order 2)
-     ("Is No Connect" False)))
-   (pin 999 4
-    (property 
-     (pinname TXD)
-     (pintype 4)
-     (Name TXD)
-     (Number 4)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" PA3_UART2_RX_RD)
-     (Order 3)
-     ("Is No Connect" False)))
-   (pin 999 5
-    (property 
-     (pinname GND)
-     (pintype 7)
-     (Name GND)
-     (Number 5)
-     ("Swap Id" "-1")
-     (Type Power)
-     ("Net Name" GND_EARTH)
-     (Order 4)
-     ("Is No Connect" False))))
   (image MP2451
    (property 
     (sourcelib G:\\MOVEBROAD\\STM32L151_PARKING_LOCK\\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\\LIBRARIES\\POWER.OLB))
@@ -1612,8 +1585,9 @@
      (Number 18)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" PB0_JDY_DISC)
      (Order 25)
-     ("Is No Connect" True)))
+     ("Is No Connect" False)))
    (pin 999 19
     (property 
      (pinname PB1/ADC_IN9/TIM3_CH4/LCD_SEG6/COMP1_INP/VREF_OUT)
@@ -1666,7 +1640,7 @@
      (Number 41)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" PB5_RADER_EN)
+     ("Net Name" PB5_JDY_PWRC)
      (Order 30)
      ("Is No Connect" False)))
    (pin 999 42
@@ -1710,8 +1684,9 @@
      (Number 46)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" PB9_JDY_STAT)
      (Order 34)
-     ("Is No Connect" True)))
+     ("Is No Connect" False)))
    (pin 999 21
     (property 
      (pinname PB10/I2C2_SCL/USART3_TX/TIM2_CH3/LCD_SEG10)
@@ -2249,6 +2224,86 @@
      (Type Passive)
      (Order 6)
      ("Is No Connect" True))))
+  (image JDY_08
+   (property 
+    (sourcelib G:\\MOVEBROAD\\STM32L151_PARKING_LOCK\\WORKSPACE\\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\\LIBRARIES\\SPECIALIC.OLB))
+   (pin 999 1
+    (property 
+     (pinname DISC)
+     (pintype 4)
+     (Name DISC)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N11464427)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname PWRC)
+     (pintype 4)
+     (Name PWRC)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N11464423)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname VCC)
+     (pintype 4)
+     (Name VCC)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VDD33_MODEL)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname GND)
+     (pintype 4)
+     (Name GND)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname TXD)
+     (pintype 4)
+     (Name TXD)
+     (Number 5)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" PA3_UART2_RX_RD)
+     (Order 4)
+     ("Is No Connect" False)))
+   (pin 999 6
+    (property 
+     (pinname RXD)
+     (pintype 4)
+     (Name RXD)
+     (Number 6)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" PA2_UART2_TX_RD)
+     (Order 5)
+     ("Is No Connect" False)))
+   (pin 999 7
+    (property 
+     (pinname STAT)
+     (pintype 4)
+     (Name STAT)
+     (Number 7)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N11464405)
+     (Order 6)
+     ("Is No Connect" False))))
   (image "NBxx-01_0"
    (property 
     (sourcelib G:\\MOVEBROAD\\STM32L151_NBIOT\\WORKSPACE\\STM32L151_NBIOT_CIRCUIT\\STM32L151_NBIOT_MAGNETIC_171009.DSN))
@@ -2757,7 +2812,7 @@
      (Number 1)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N11437646)
+     ("Net Name" SPOT_LOCK_K1)
      (Order 0)
      ("Is No Connect" False)))
    (pin 999 2
@@ -2768,7 +2823,7 @@
      (Number 2)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N11437634)
+     ("Net Name" SPOT_LOCK_K2)
      (Order 1)
      ("Is No Connect" False)))
    (pin 999 3
@@ -2779,7 +2834,7 @@
      (Number 3)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N11437388)
+     ("Net Name" SPOT_LOCK_COM)
      (Order 2)
      ("Is No Connect" False)))
    (pin 999 4
@@ -2790,7 +2845,7 @@
      (Number 4)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N11437369)
+     ("Net Name" SPOT_LOCK_K3)
      (Order 3)
      ("Is No Connect" False))))
   (image "HEADER 5_0"
@@ -2851,6 +2906,97 @@
      ("Net Name" PB12_LOCK_K2)
      (Order 4)
      ("Is No Connect" False))))
+  (image "Header 8"
+   (property 
+    (sourcelib G:\\MOVEBROAD\\STM32L151_PARKING_LOCK\\WORKSPACE\\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\\LIBRARIES\\CONECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VBAT)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" PB12_LOCK_K2)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname 3)
+     (pintype 4)
+     (Name 3)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" PB13_LOCK_TXD)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname 4)
+     (pintype 4)
+     (Name 4)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" PB14_LOCK_RXD)
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname 5)
+     (pintype 4)
+     (Name 5)
+     (Number 5)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPOT_LOCK_K1)
+     (Order 4)
+     ("Is No Connect" False)))
+   (pin 999 6
+    (property 
+     (pinname 6)
+     (pintype 4)
+     (Name 6)
+     (Number 6)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPOT_LOCK_K2)
+     (Order 5)
+     ("Is No Connect" False)))
+   (pin 999 7
+    (property 
+     (pinname 7)
+     (pintype 4)
+     (Name 7)
+     (Number 7)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPOT_LOCK_K3)
+     (Order 6)
+     ("Is No Connect" False)))
+   (pin 999 8
+    (property 
+     (pinname 8)
+     (pintype 4)
+     (Name 8)
+     (Number 8)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPOT_LOCK_COM)
+     (Order 7)
+     ("Is No Connect" False))))
   (image MARK
    (property 
     (sourcelib G:\\MOVEBROAD\\STM32L151_NBIOT\\WORKSPACE\\STM32L151_NBIOT_CIRCUIT\\LIBRARIES\\CONECTOR.OLB))
@@ -2900,7 +3046,7 @@
      (Number 1)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N11437369)
+     ("Net Name" SPOT_LOCK_K3)
      (Order 0)
      ("Is No Connect" False)))
    (pin 999 2
@@ -2925,7 +3071,7 @@
      (Number 1)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N11437388)
+     ("Net Name" SPOT_LOCK_COM)
      (Order 0)
      ("Is No Connect" False)))
    (pin 999 2
@@ -2936,7 +3082,7 @@
      (Number 2)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N11437634)
+     ("Net Name" SPOT_LOCK_K2)
      (Order 1)
      ("Is No Connect" False))))
   (image SIM
@@ -3279,15 +3425,14 @@
      U1-23 U1-35 U1-47 U1-8 X2-3 C3-1 C4-1 C9-2 C10-1
      C11-1 C12-1 C13-1 J2-1 U3-11 U3-9 C14-1 C15-1 C16-2
      J3-4 C18-2 Q5-2 R31-2 Q6-2 R32-1 U15-1 U15-12 U15-13
-     LC2-2 LC3-2 Q7-2 U19-2 D7-1 C45-2 R36-1 C47-2 R35-1
-     J1-2 J12-4))
+     LC2-2 LC3-2 Q7-2 U19-2 D7-1 C45-2 R36-1 C47-2 J1-2
+     J12-4 R35-1 C56-2 U23-4))
   (net GND_EARTH
     (property 
      (nettype S))
    (pins
-     U11-4 R19-2 C39-2 C40-2 R21-2 C42-2 Q6-3 U18-5 C1-2
-     C51-1 U21-1 C50-1 C52-1 C55-1 C54-2 U20-1 C49-1 C53-2
-     U22-1))
+     U11-4 R19-2 C39-2 C40-2 R21-2 C42-2 Q6-3 C1-2 C51-1
+     U21-1 C50-1 C52-1 C55-1 C54-2 U20-1 C49-1 C53-2 U22-1))
   (net GND_SIGNAL
     (property 
      (nettype S))
@@ -3371,18 +3516,15 @@
   (net N11437361
    (pins
      D10-2 D11-1))
-  (net N11437369
+  (net N11464405
    (pins
-     D10-1 J11-4))
-  (net N11437388
+     U23-7 R40-1))
+  (net N11464423
    (pins
-     D11-2 J11-3 D12-1 D13-1))
-  (net N11437634
+     U23-2 R39-1))
+  (net N11464427
    (pins
-     J11-2 D12-2))
-  (net N11437646
-   (pins
-     J11-1 D13-2))
+     U23-1 R38-1))
   (net NB_RF_ANT
    (pins
      U8-20 LC5-1 LC6-2))
@@ -3392,7 +3534,7 @@
    (pins
      U1-1 U1-24 U1-36 U1-48 U1-9 R2-2 C10-2 C11-2 C12-2
      C13-2 J2-4 Q1-2 U8-39 U8-40 C23-2 C24-2 C25-2 C26-1
-     J9-1 R37-1 C48-1 LC8-2 C47-1 J12-5))
+     J9-1 R37-1 C48-1 LC8-2 C47-1 J12-5 C56-1))
   (net N_RESET
    (pins
      U8-22 Q4-3 C32-2))
@@ -3428,10 +3570,10 @@
      U1-11 R24-2 C42-1))
   (net PA2_UART2_TX_RD
    (pins
-     U1-12 U18-3))
+     U1-12 U23-6))
   (net PA3_UART2_RX_RD
    (pins
-     U1-13 U18-4))
+     U1-13 U23-5))
   (net PA4_RADER_DAC_OUT1
    (pins
      U1-14 R20-2))
@@ -3450,6 +3592,9 @@
   (net PA9_UART1_TX_NB
    (pins
      U1-30 R26-1))
+  (net PB0_JDY_DISC
+   (pins
+     U1-18 R38-2))
   (net PB10_DIO1
    (pins
      U1-21 U15-10))
@@ -3458,13 +3603,13 @@
      U1-22 U15-3))
   (net PB12_LOCK_K2
    (pins
-     U1-25 J12-1))
+     U1-25 J12-1 J13-2))
   (net PB13_LOCK_TXD
    (pins
-     U1-26 J12-2))
+     U1-26 J12-2 J13-3))
   (net PB14_LOCK_RXD
    (pins
-     U1-27 J12-3))
+     U1-27 J12-3 J13-4))
   (net PB15_RADER_VPTAT
    (pins
      U1-28 U22-4))
@@ -3480,9 +3625,9 @@
   (net PB4_DIO0
    (pins
      U1-40 U15-11))
-  (net PB5_RADER_EN
+  (net PB5_JDY_PWRC
    (pins
-     U1-41 U18-2))
+     U1-41 R39-2))
   (net PB6_I2C1_SCL
    (pins
      U1-42 U3-1 J3-3 R5-1))
@@ -3492,6 +3637,9 @@
   (net PB8_BEEP
    (pins
      U1-45 Q7-1))
+  (net PB9_JDY_STAT
+   (pins
+     U1-46 R40-2))
   (net PC13
    (pins
      U1-2 U8-6))
@@ -3510,6 +3658,18 @@
   (net SIM_RST
    (pins
      J5-3 C31-1 R13-1 U16-7 U5-5))
+  (net SPOT_LOCK_COM
+   (pins
+     D11-2 J11-3 D12-1 D13-1 J13-8))
+  (net SPOT_LOCK_K1
+   (pins
+     J11-1 D13-2 J13-5))
+  (net SPOT_LOCK_K2
+   (pins
+     J11-2 D12-2 J13-6))
+  (net SPOT_LOCK_K3
+   (pins
+     D10-1 J11-4 J13-7))
   (net UART1_NB_RX
    (pins
      U8-23 R26-2 J10-1))
@@ -3517,8 +3677,8 @@
     (property 
      (nettype S))
    (pins
-     U18-1 U19-5 R34-2 C45-1 R1-1 U21-3 C50-2 U20-2 C49-2
-     C53-1))
+     U19-5 R34-2 C45-1 R1-1 U21-3 C50-2 U20-2 C49-2 C53-1
+     J13-1))
   (net VBAT_IN
     (property 
      (nettype S))
@@ -3534,7 +3694,7 @@
      (nettype S))
    (pins
      U3-2 U3-4 U3-13 U3-6 Q1-3 C14-2 C15-2 J3-5 R4-2
-     R5-2 BL1-2))
+     R5-2 BL1-2 U23-3))
   (net VDD33_RF
     (property 
      (nettype S))

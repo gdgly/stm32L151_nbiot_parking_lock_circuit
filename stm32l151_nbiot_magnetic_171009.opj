@@ -34,7 +34,7 @@
     (DRC_Run_Electrical_Rules "TRUE")
     (DRC_Run_Physical_Rules "FALSE")
     (DRC_Report_File
-       "G:\Movebroad\stm32L151_parking_lock\stm32L151_nbiot_parking_lock_circuit\STM32L151_NBIOT_PARKING_LOCK_MAGNETIC.DRC")
+       "G:\Movebroad\stm32L151_parking_lock\workspace\stm32L151_nbiot_parking_lock_circuit\STM32L151_NBIOT_PARKING_LOCK_MAGNETIC_180528.DRC")
     (DRC_Check_Ports "FALSE")
     (DRC_Check_Off-Page_Connectors "FALSE")
     (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
@@ -64,7 +64,7 @@
     (DRC_Run_Physical_Custom_DRC "FALSE")
     (Netlist_TAB "8")
     (OTHER_Part_Value "{Value}")
-    (OTHER_Netlist_File "STM32L151_NBIOT_PARKING_LOCK_MAGNETIC.asc")
+    (OTHER_Netlist_File "STM32L151_NBIOT_PARKING_LOCK_MAGNETIC_180528.asc")
     (OTHER_Netlist_File2 "STM32L151_NBIOT_MAGNETIC_171009.CMP")
     (OTHER_View_Output "FALSE")
     (OTHER_View_Output2 "FALSE")
@@ -104,9 +104,23 @@
     (File ".\stm32l151_nbiot_parking_lock_magnetic.drc"
       (Type "Report"))
     (File ".\stm32l151_nbiot_parking_lock_magnetic.asc"
+      (Type "Report"))
+    (File ".\stm32l151_nbiot_parking_lock_magnetic_180528.drc"
+      (Type "Report"))
+    (File ".\stm32l151_nbiot_parking_lock_magnetic_180528.asc"
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    ("Header 8"
+      (FullPartName "Header 8.Normal")
+      (LibraryName
+         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\WORKSPACE\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\LIBRARIES\CONECTOR.OLB")
+      (DeviceIndex "0"))
+    (JDY_08
+      (FullPartName "JDY_08.Normal")
+      (LibraryName
+         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\WORKSPACE\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\LIBRARIES\SPECIALIC.OLB")
+      (DeviceIndex "0"))
     (RADAR_MODULE3
       (FullPartName "RADAR_MODULE3.Normal")
       (LibraryName
@@ -219,16 +233,6 @@
       (FullPartName "RADER_MODULE1.Normal")
       (LibraryName
          "G:\MOVEBROAD\STM32L151_NBIOT\WORKSPACE\STM32L151_NBIOT_CIRCUIT\LIBRARIES\SPECIALIC.OLB")
-      (DeviceIndex "0"))
-    (LM358
-      (FullPartName "LM358.Normal")
-      (LibraryName
-         "G:\MOVEBROAD\STM32L151_NBIOT\WORKSPACE\STM32L151_NBIOT_CIRCUIT\LIBRARIES\LIBRARY1.OLB")
-      (DeviceIndex "0"))
-    ("HEADER 5_0"
-      (FullPartName "HEADER 5_0.Normal")
-      (LibraryName
-         "G:\MOVEBROAD\STM32L151_NBIOT\WORKSPACE\STM32L151_NBIOT_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -253,7 +257,7 @@
         (Zoom "85")
         (Occurrence "/"))
       (Path
-         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
+         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\WORKSPACE\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
       (Schematic "SCHEMATIC1")
       (Page "01_COVER"))
     (Doc
@@ -264,7 +268,7 @@
         (Zoom "85")
         (Occurrence "/"))
       (Path
-         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
+         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\WORKSPACE\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
       (Schematic "SCHEMATIC1")
       (Page "02_CORE"))
     (Doc
@@ -275,7 +279,7 @@
         (Zoom "85")
         (Occurrence "/"))
       (Path
-         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
+         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\WORKSPACE\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
       (Schematic "SCHEMATIC1")
       (Page "03_NBIOT"))
     (Doc
@@ -286,7 +290,7 @@
         (Zoom "85")
         (Occurrence "/"))
       (Path
-         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
+         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\WORKSPACE\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
       (Schematic "SCHEMATIC1")
       (Page "04_RADER"))
     (Doc
@@ -297,7 +301,7 @@
         (Zoom "85")
         (Occurrence "/"))
       (Path
-         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
+         "G:\MOVEBROAD\STM32L151_PARKING_LOCK\WORKSPACE\STM32L151_NBIOT_PARKING_LOCK_CIRCUIT\STM32L151_NBIOT_MAGNETIC_171009.DSN")
       (Schematic "SCHEMATIC1")
       (Page "05_POWER")))
   (LastUsedLibraryBrowseDirectory
